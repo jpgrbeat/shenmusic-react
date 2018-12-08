@@ -1,32 +1,198 @@
-.App {
-  text-align: center;
+body {
+  background-color: #77ACFF;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100% !important;
+  position: absolute;
+  width: 100% !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column;
+}
+.home-container {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
+}
+.footer {
+  margin-top: auto;
+  background-color: #2B3E5C;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 0 1 auto;
+  position: relative;
+  bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.footer ul {
+  text-decoration: none;
+  list-style: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a {
+  text-decoration: none;
+  text-align: center;
+  color: #D1E3FF;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.nav-container {
+  height: 60px;
+  background-color: #D1E3FF;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  background: #D1E3FF;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #D1E3FF 0%, #207cca 60%, #1e5799 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #D1E3FF 0%, #207cca 60%, #1e5799 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #D1E3FF 0%, #207cca 60%, #1e5799 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E3FF', endColorstr='#1e5799', GradientType=1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-container ul {
+  padding-inline-start: 5px;
+}
+.nav-container nav {
+  margin-top: 6px;
+  float: right;
+}
+.nav-container a:not(:nth-child(3)) {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.call-button {
+  position: absolute;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 20px 8px;
+}
+.menu-bar {
+  background-color: black;
+  height: 5px;
+  width: 20px;
+  margin: 3px 0;
+  border-radius: 10px;
+}
+.menu-button {
+  margin-top: 18px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+.radio-selectors {
+  display: inline-block;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:hover {
+  background-color: #717171;
+}
+.dot-active {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+}
+.carousel-container button {
+  background-color: Transparent;
+  border: none;
+}
+.carousel-container button:focus {
+  outline: 0;
+}
+.carousel-container button:active {
+  transform: translateY(4px);
+}
+.dots {
+  align-self: center;
+}
+.carousel-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.slide:image {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+.slider-controls {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+}
+.selector-div {
+  align-self: flex-end;
+}
+.arrow {
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -ms-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0.4;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.service-d {
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 7px 4px rgba(55, 113, 200, 0.2);
+  -moz-box-shadow: 5px 5px 7px 4px rgba(55, 113, 200, 0.2);
+  box-shadow: 5px 5px 7px 4px rgba(55, 113, 200, 0.2);
+  margin: 20px;
+  background-color: #3771C8;
+}
+.service-d h3 {
+  margin: auto;
+  color: #D1E3FF;
+  text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
+}
+.service-d p {
+  color: #D1E3FF;
+  text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+.mission {
+  background-color: #1e55a8;
+  width: 98%;
+  height: 139px;
+  border-radius: 50%;
+  position: relative;
+  left: 1%;
+  right: 1%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: -1;
+}
+.main-overflow {
+  overflow-y: scroll;
 }
