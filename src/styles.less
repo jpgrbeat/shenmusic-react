@@ -12,26 +12,21 @@ html, body, #app, #app>div {
   height: 100% !important;
   position: absolute;
   width: 100% !important;
-  display: flex;
-  flex-flow: column;
 }
 .home-container{
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  flex: auto;
 }
 .footer{
   margin-top: auto;
     background-color: #2B3E5C;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex:0 1 auto;
-    position: relative;
+    position: sticky;
     bottom: 0;
+    text-align: center;
+    padding: 5px;
     & ul{
       text-decoration: none;
       list-style: none;
+      margin-bottom: 0;
     }
     & a{
       text-decoration: none;
@@ -44,18 +39,18 @@ html, body, #app, #app>div {
 .nav-container{
   height:60px;
   background-color: #D1E3FF;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
   background: #D1E3FF; /* Old browsers */
   background: -moz-linear-gradient(45deg, #D1E3FF 0%, #207cca 60%, #1e5799 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #D1E3FF 0%,#207cca 60%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #D1E3FF 0%,#207cca 60%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D1E3FF', endColorstr='#1e5799',GradientType=1 );
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow-y: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 .nav-container ul{
   padding-inline-start: 5px;
@@ -129,7 +124,6 @@ html, body, #app, #app>div {
   align-self: center;
 }
 .carousel-container {
-    display: flex;
     width: 100%;
     position: relative;
 }
@@ -179,6 +173,7 @@ html, body, #app, #app>div {
     margin: auto;
     color: @light-color;
     text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
+    text-align: center;
   }
   & p{
     color:@light-color;
@@ -186,6 +181,8 @@ html, body, #app, #app>div {
     text-align: center;
     position: relative;
     margin-top: 10px;
+    text-align: left;
+    padding-left: 2px;
   }
 }
 .mission{
