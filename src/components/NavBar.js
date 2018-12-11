@@ -16,8 +16,8 @@ class NavBar extends React.Component{
             </div>
           </button>
         </div>
-        <NavLink exact to= '/'>
-          <img src={logo} alt='Shenandoah Music Logo' style={{float:'left',width:'85px', marginTop:'5px'}}/>
+        <NavLink className='link-logo' exact to= '/'>
+          <img className='logo' src={logo} alt='Shenandoah Music Logo'/>
         </NavLink>
         <a className='call-link' href= "tel:5406652781">
           <button className='call-button'>Call Us!: 540-665-2781 </button>

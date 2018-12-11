@@ -9,9 +9,6 @@ class HomePage extends React.Component{
         <Carousel/>
         <MissionStat/>
         <ServiceDescriptor/>
-        <ServiceDescriptor/>
-        <ServiceDescriptor/>
-        <ServiceDescriptor/>
       </div>
     )
   }

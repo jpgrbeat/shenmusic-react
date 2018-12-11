@@ -21,7 +21,6 @@ html, body, #app, #app>div {
     width: 100%;
     position: sticky;
     bottom: 0;
-    text-align: center;
     padding: 5px;
     & ul{
       text-decoration: none;
@@ -37,7 +36,7 @@ html, body, #app, #app>div {
     }
 }
 .nav-container{
-  height:60px;
+  height:90px;
   background-color: #D1E3FF;
   background: #D1E3FF; /* Old browsers */
   background: -moz-linear-gradient(45deg, #D1E3FF 0%, #207cca 60%, #1e5799 100%); /* FF3.6-15 */
@@ -52,6 +51,15 @@ html, body, #app, #app>div {
   width: 100%;
   z-index: 2;
 }
+.link-logo{
+  position:relative;
+  & img{
+    width: 149px;
+    position: absolute;
+    left: .5em;
+  }
+}
+
 .nav-container ul{
   padding-inline-start: 5px;
 }
@@ -59,25 +67,23 @@ html, body, #app, #app>div {
   margin-top: 6px;
   float: right;
 }
-.nav-container a:not(:nth-child(3)){
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-}
+
 .call-button{
   position: absolute;
-    padding: 5px;
-    border-radius: 50px;
-    margin: 20px 8px;
+  top: 9px;
+  right: 0px;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px 8px;
 }
 .response-nav{
   // visibility: collapse;
 }
 .menu-bar{
-  background-color: black;
-  height: 5px;
-  width: 20px;
-  margin: 3px 0;
+  background-color: #1e55a861;
+  height: 7px;
+  width: 35px;
+  margin: 6px 0;
   border-radius: 10px;
 }
 .menu-button{
@@ -187,16 +193,32 @@ html, body, #app, #app>div {
 }
 .mission{
   background-color: @mid-tone;
-  width: 98%;
-  height: 139px;
-  border-radius: 50%;
+  height: 220px;
   position: relative;
-  left: 1%;
-  right: 1%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  bottom: 21px;
   z-index: -1;
 }
 .main-overflow{
   overflow-y: scroll;
+}
+.service-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & img{
+        position: relative;
+        width:  150px;
+        height: 150px;
+        margin: 5px;
+  }
+}
+.service-gallery{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  & .row{
+    width: 150px;
+    margin: 5px;
+  }
+
 }
