@@ -157,29 +157,6 @@ body,
 .arrow:hover {
   opacity: 1;
 }
-.service-d {
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 7px 4px rgba(55, 113, 200, 0.2);
-  -moz-box-shadow: 5px 5px 7px 4px rgba(55, 113, 200, 0.2);
-  box-shadow: 5px 5px 7px 4px rgba(55, 113, 200, 0.2);
-  margin: 20px;
-  background-color: #3771C8;
-}
-.service-d h3 {
-  margin: auto;
-  color: #D1E3FF;
-  text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
-  text-align: center;
-}
-.service-d p {
-  color: #D1E3FF;
-  text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
-  text-align: center;
-  position: relative;
-  margin-top: 10px;
-  text-align: left;
-  padding-left: 2px;
-}
 .mission {
   background-color: #1e55a8;
   height: 220px;
@@ -192,21 +169,46 @@ body,
 }
 .service-container {
   display: flex;
+  flex-flow: column;
   flex-wrap: wrap;
   justify-content: center;
 }
-.service-container img {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 5px;
+.service-container .row {
+  text-align: center;
+  background-color: #3771C8;
 }
 .service-gallery {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.service-gallery .row {
+.service-gallery .row-g {
   width: 150px;
   margin: 5px;
+}
+.service-gallery .col {
+  width: 150px;
+  position: relative;
+  color: white;
+}
+.service-gallery .col img {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.service-gallery .col:hover,
+.service-gallery .col:active {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* msie */
+  cursor: pointer;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }

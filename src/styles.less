@@ -168,29 +168,29 @@ html, body, #app, #app>div {
 
 
 }
-.service-d{
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 7px 4px rgba(55,113,200, 0.2);
-  -moz-box-shadow: 5px 5px 7px 4px rgba(55,113,200, 0.2);
-  box-shadow: 5px 5px 7px 4px rgba(55,113,200, 0.2);
-  margin: 20px;
-  background-color: @darker-color;
-  & h3{
-    margin: auto;
-    color: @light-color;
-    text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
-    text-align: center;
-  }
-  & p{
-    color:@light-color;
-    text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
-    text-align: center;
-    position: relative;
-    margin-top: 10px;
-    text-align: left;
-    padding-left: 2px;
-  }
-}
+// .service-d{
+//   border-radius: 20px;
+//   -webkit-box-shadow: 5px 5px 7px 4px rgba(55,113,200, 0.2);
+//   -moz-box-shadow: 5px 5px 7px 4px rgba(55,113,200, 0.2);
+//   box-shadow: 5px 5px 7px 4px rgba(55,113,200, 0.2);
+//   margin: 20px;
+//   background-color: @darker-color;
+//   & h3{
+//     margin: auto;
+//     color: @light-color;
+//     text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
+//     text-align: center;
+//   }
+//   & p{
+//     color:@light-color;
+//     text-shadow: 2px 1px 1px rgba(173, 173, 173, 0.8);
+//     text-align: center;
+//     position: relative;
+//     margin-top: 10px;
+//     text-align: left;
+//     padding-left: 2px;
+//   }
+// }
 .mission{
   background-color: @mid-tone;
   height: 220px;
@@ -203,22 +203,48 @@ html, body, #app, #app>div {
 }
 .service-container{
   display: flex;
+  flex-flow: column;
   flex-wrap: wrap;
   justify-content: center;
-  & img{
-        position: relative;
-        width:  150px;
-        height: 150px;
-        margin: 5px;
+  & .row{
+    text-align: center;
+    background-color: @darker-color;
+  }
+  & .col{
+
   }
 }
 .service-gallery{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  & .row{
+
+  & .row-g{
     width: 150px;
     margin: 5px;
   }
-
+  & .col{
+    width:150px;
+    position:relative;
+    color: white;
+    & img{
+      display: block;
+      position: relative;
+      width:  150px;
+      height: 150px;
+      margin: 5px;
+    }
+  }
+  & .col:hover, & .col:active{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+    cursor: pointer;
+  }
+}
+.image-overlay{
+  position:absolute;
+  top: 0;
+  height: 100%;
+  width:100%;
+  text-align: center;
 }
