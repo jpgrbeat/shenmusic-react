@@ -19,6 +19,19 @@ body,
   position: sticky;
   bottom: 0;
   padding: 5px;
+  display: flex;
+}
+.footer h4 {
+  margin: 0;
+}
+.footer .hours {
+  position: relative;
+  left: 15%;
+  top: 0;
+  color: #D1E3FF;
+}
+.footer .hours ul {
+  margin: 0;
 }
 .footer ul {
   text-decoration: none;
@@ -176,53 +189,26 @@ body,
 .service-container .row {
   text-align: center;
   background-color: #3771C8;
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  width: 80%;
+  position: relative;
+  left: 10%;
+  border-radius: 20px;
 }
 .service-gallery {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .service-gallery .row-g {
-  width: 150px;
-  margin: 5px;
+  display: flex;
+  justify-content: center;
 }
 .service-gallery .col {
   width: 150px;
   position: relative;
   color: white;
+  cursor: pointer;
+  margin: 5px;
 }
 .service-gallery .col img {
   display: block;
@@ -230,13 +216,6 @@ body,
   width: 150px;
   height: 150px;
   margin: 5px;
-}
-.service-gallery .col:hover,
-.service-gallery .col:active {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  /* msie */
-  cursor: pointer;
 }
 .image-overlay {
   position: absolute;

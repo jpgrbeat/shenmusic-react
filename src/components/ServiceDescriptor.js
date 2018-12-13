@@ -38,6 +38,12 @@ class ServiceDescriptor extends React.Component{
               </div>
             </div>
           </div>
+          <div className="row">
+            {selectorId === 'Sales' ? <Sales/> : null}
+            {selectorId === 'Service' ? <Service/> :null}
+            {selectorId === 'Lessons' ? <Lessons/> : null}
+            {selectorId === 'Rentals' ? <Rentals/> : null}
+          </div>
           <div className='row-g'>
             <div className='col'>
               <img src={Snow} alt='ties'/>
@@ -53,12 +59,6 @@ class ServiceDescriptor extends React.Component{
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          {selectorId === 'Sales' ? <Sales/> : null}
-          {selectorId === 'Service' ? <Service/> :null}
-          {selectorId === 'Lessons' ? <Lessons/> : null}
-          {selectorId === 'Rentals' ? <Rentals/> : null}
         </div>
       </div>
     )

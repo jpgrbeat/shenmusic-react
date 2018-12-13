@@ -22,6 +22,19 @@ html, body, #app, #app>div {
     position: sticky;
     bottom: 0;
     padding: 5px;
+    display: flex;
+    & h4{
+      margin:0;
+    }
+    & .hours{
+      position: relative;
+      left: 15%;
+      top: 0;
+      color: @light-color;
+      & ul{
+        margin: 0;
+      }
+    }
     & ul{
       text-decoration: none;
       list-style: none;
@@ -208,42 +221,32 @@ html, body, #app, #app>div {
   justify-content: center;
   & .row{
     text-align: center;
-    background-color: @darker-color;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+    background-color: #3771C8;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border-radius: 20px;
   }
   & .col{
 
   }
 }
-@keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
-}
-@-moz-keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
-}
-@-webkit-keyframes fadein {
- from { opacity: 0; }
- to   { opacity: 1; }
-}
+
 .service-gallery{
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 
   & .row-g{
-    width: 150px;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
   }
   & .col{
     width:150px;
     position:relative;
     color: white;
+    cursor: pointer;
+    margin:5px;
     & img{
       display: block;
       position: relative;
@@ -251,11 +254,7 @@ html, body, #app, #app>div {
       height: 150px;
       margin: 5px;
     }
-  }
-  & .col:hover, & .col:active{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* msie */
-    cursor: pointer;
+
   }
 }
 .image-overlay{
