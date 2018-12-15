@@ -176,6 +176,15 @@ body,
   position: relative;
   bottom: 21px;
   z-index: -1;
+  color: #D1E3FF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.mission h2 {
+  position: relative;
+  top: 20px;
 }
 .main-overflow {
   overflow-y: scroll;
@@ -204,7 +213,7 @@ body,
   justify-content: center;
 }
 .service-gallery .col {
-  width: 150px;
+  width: 400px;
   position: relative;
   color: white;
   cursor: pointer;
@@ -213,8 +222,8 @@ body,
 .service-gallery .col img {
   display: block;
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 400px;
+  height: 400px;
   margin: 5px;
 }
 .image-overlay {
@@ -223,4 +232,65 @@ body,
   height: 100%;
   width: 100%;
   text-align: center;
+}
+.facebook {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.facebook img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  bottom: 18px;
+  right: 18px;
+}
+.logos-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.logos-main .brands {
+  text-align: center;
+  background-color: #3771C8;
+  color: #D1E3FF;
+  font-size: 22px;
+  width: 100%;
+}
+.logos-main img {
+  width: 330px;
+  margin: 2px 5px;
+}
+@media screen and (max-width: 600px) {
+  .logos-main img {
+    width: 120px;
+    margin: 2px 5px;
+  }
+  .service-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+  .service-container .row-g {
+    display: block;
+    width: 100%;
+  }
+  .service-container .col {
+    width: 360px;
+    margin: 0 0 10px 0;
+  }
+  .service-container .col img {
+    width: 360px;
+    height: 360px;
+  }
+  .service-container .col:focus img {
+    height: 100px;
+    width: 100px;
+  }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Facebook from '../images/facebook.png'
 
 class Footer extends React.Component{
   render(){
@@ -20,6 +20,9 @@ class Footer extends React.Component{
             <li>4</li>
             <li>5</li>
           </ul>
+        </div>
+        <div className='facebook'>
+          <img src={Facebook} alt='blah blah blah'/>
         </div>
       </div>
     )

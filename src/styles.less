@@ -210,6 +210,15 @@ html, body, #app, #app>div {
   position: relative;
   bottom: 21px;
   z-index: -1;
+  color: @light-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  & h2{
+    position: relative;
+    top: 20px;
+  }
 }
 .main-overflow{
   overflow-y: scroll;
@@ -242,7 +251,7 @@ html, body, #app, #app>div {
     justify-content: center;
   }
   & .col{
-    width:150px;
+    width:400px;
     position:relative;
     color: white;
     cursor: pointer;
@@ -250,8 +259,8 @@ html, body, #app, #app>div {
     & img{
       display: block;
       position: relative;
-      width:  150px;
-      height: 150px;
+      width:  400px;
+      height: 400px;
       margin: 5px;
     }
 
@@ -263,4 +272,68 @@ html, body, #app, #app>div {
   height: 100%;
   width:100%;
   text-align: center;
+}
+.facebook{
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  & img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 18px;
+    right: 18px;
+  }
+}
+.logos-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  & .brands{
+    text-align: center;
+    background-color: @darker-color;
+    color:@light-color;
+    font-size: 22px;
+    width: 100%;
+  }
+  & img{
+    width: 330px;
+    margin: 2px 5px;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .logos-main img{
+   width: 120px;
+   margin: 2px 5px;
+ }
+ .service-container{
+   display: flex;
+   flex-flow: row wrap;
+   align-content: center;
+   & .row-g{
+     display: block;
+     width: 100%;
+   }
+   & .col{
+     width: 360px;
+     margin: 0 0 10px 0;
+   }
+   & .col img{
+     width: 360px;
+     height: 360px;
+   }
+   & .col:focus{
+     & img{
+       height: 100px;
+       width: 100px;
+     }
+   }
+ }
 }
