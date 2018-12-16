@@ -228,19 +228,38 @@ html, body, #app, #app>div {
   flex-flow: column;
   flex-wrap: wrap;
   justify-content: center;
+  color: @light-color;
+  text-align: center;
+  & .service-header{
+    margin-top: 5px;
+    color:@light-color;
+    background-color: @darkest-color;
+  }
   & .row{
-    text-align: center;
     background-color: #3771C8;
     width: 80%;
     position: relative;
     left: 10%;
     border-radius: 20px;
+    & ul{
+      list-style-type:none;
+    }
   }
   & .col{
 
   }
 }
-
+.history{
+  background-color: @darker-color;
+  color: @light-color;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  & .history-header{
+    background-color: @darkest-color;
+  }
+}
 .service-gallery{
   display: flex;
   justify-content: center;
@@ -328,12 +347,6 @@ html, body, #app, #app>div {
    & .col img{
      width: 360px;
      height: 360px;
-   }
-   & .col:focus{
-     & img{
-       height: 100px;
-       width: 100px;
-     }
    }
  }
 }

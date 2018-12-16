@@ -23,6 +23,9 @@ class ServiceDescriptor extends React.Component{
     let {selectorId} = this.state;
     return(
       <div className='service-container'>
+        <div className='service-header'>
+          <h1>Our Services</h1>
+        </div>
         <div className='service-gallery'>
           <div className='row-g'>
             <div className='col'>

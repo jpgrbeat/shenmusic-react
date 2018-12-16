@@ -194,14 +194,34 @@ body,
   flex-flow: column;
   flex-wrap: wrap;
   justify-content: center;
+  color: #D1E3FF;
+  text-align: center;
+}
+.service-container .service-header {
+  margin-top: 5px;
+  color: #D1E3FF;
+  background-color: #2860B4;
 }
 .service-container .row {
-  text-align: center;
   background-color: #3771C8;
   width: 80%;
   position: relative;
   left: 10%;
   border-radius: 20px;
+}
+.service-container .row ul {
+  list-style-type: none;
+}
+.history {
+  background-color: #3771C8;
+  color: #D1E3FF;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+.history .history-header {
+  background-color: #2860B4;
 }
 .service-gallery {
   display: flex;
@@ -288,9 +308,5 @@ body,
   .service-container .col img {
     width: 360px;
     height: 360px;
-  }
-  .service-container .col:focus img {
-    height: 100px;
-    width: 100px;
   }
 }
