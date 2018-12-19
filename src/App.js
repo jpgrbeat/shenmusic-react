@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import HomePage from './containers/HomePage'
 import {Route,Switch} from 'react-router-dom'
 import Footer from './containers/Footer'
+import HeroIcon from './components/HeroIcon'
 class App extends Component {
   render() {
     return (

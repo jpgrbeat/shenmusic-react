@@ -4,6 +4,7 @@ import ServiceDescriptor from '../components/ServiceDescriptor'
 import MissionStat from '../components/MissionStat'
 import Logos from './Logos'
 import OurHistory  from './OurHistory'
+import BlogContainer from './BlogContainer'
 class HomePage extends React.Component{
   render(){
     return(
@@ -13,6 +14,7 @@ class HomePage extends React.Component{
         <OurHistory/>
         <ServiceDescriptor/>
         <Logos/>
+        <BlogContainer/>
       </div>
     )
   }

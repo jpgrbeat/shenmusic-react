@@ -12,6 +12,12 @@ body,
   position: absolute;
   width: 100% !important;
 }
+h1 {
+  font-size: 22px;
+}
+.hero-logo {
+  width: 5%;
+}
 .footer {
   margin-top: auto;
   background-color: #2B3E5C;
@@ -60,6 +66,8 @@ body,
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E3FF', endColorstr='#1e5799', GradientType=1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-flow: column;
+  justify-content: center;
   overflow-y: hidden;
   position: sticky;
   top: 0;
@@ -286,6 +294,11 @@ body,
 .logos-main img {
   width: 330px;
   margin: 2px 5px;
+}
+.blog-container .blog-container-header {
+  text-align: center;
+  background-color: #3771C8;
+  color: #D1E3FF;
 }
 @media screen and (max-width: 600px) {
   .logos-main img {
